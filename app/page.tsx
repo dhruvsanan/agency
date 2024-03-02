@@ -6,14 +6,15 @@ import { Spotlight } from "@/components/ui/spotlight";
 import Image from "next/image";
 import Link from "next/link";
 
-import WebsiteDesign from "./website-design";
-import GraphicDesign from "./graphic-design";
-import ShopifyStores from "./shopify-stores";
-import Brands from "./brands";
-import Services from "./services";
-import FAQS from "./faq";
+import WebsiteDesign from "../components/website-design";
+import GraphicDesign from "../components/graphic-design";
+import Clients from "../components/clients";
+import Services from "../components/services";
+import Price from "../components/pricing";
+import FAQS from "../components/faq";
 import { useRef } from "react";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
+import Footer from "@/components/footer";
 
 export default function Home() {
 
@@ -28,8 +29,10 @@ export default function Home() {
 
   const websiteDesignRef = useRef<HTMLDivElement>(null);
   const graphicDesignRef = useRef<HTMLDivElement>(null);
-  const shopifyStoresRef = useRef<HTMLDivElement>(null);
-  const brandsRef = useRef<HTMLDivElement>(null);
+  const ClientsRef = useRef<HTMLDivElement>(null);
+  const PriceRef = useRef<HTMLDivElement>(null);
+  const FAQRef = useRef<HTMLDivElement>(null);
+
   
   const scrollToWebsiteDesign = () => {
     websiteDesignRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest", });
@@ -39,12 +42,15 @@ export default function Home() {
     graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
   }
   
-  const scrollToShopifyStores = () => {
-    shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToClients = () => {
+    ClientsRef.current?.scrollIntoView({ behavior: "smooth" });
   }
   
-  const scrollToBrands = () => {
-    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToPrice = () => {
+    PriceRef.current?.scrollIntoView({ behavior: "smooth" });
+  }
+  const scrollToFAQ = () => {
+    FAQRef.current?.scrollIntoView({ behavior: "smooth" });
   }
   
   
@@ -56,11 +62,9 @@ export default function Home() {
       <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
-        scrollToShopifyStores={scrollToShopifyStores}
-        scrollToBrands={scrollToBrands}
-
-
-
+        scrollToClients={scrollToClients}
+        scrollToPrice={scrollToPrice}
+        scrollToFAQ={scrollToFAQ}
       />
 
       <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
@@ -73,8 +77,8 @@ export default function Home() {
           Create, grow, and <br /> scale your business
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business. We are a team of
-          creatives who are excited to help you grow your business.
+          Custom tailored solutions for your business<br></br> We are a team of
+          creatives who are excited to help you grow your business
         </p>
 
         <Link
@@ -83,7 +87,7 @@ export default function Home() {
           flex items-center 
           justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white "
         >
-          Book a call
+          Book a free call
         </Link>
 
         <div className="w-full pt-20">
@@ -98,19 +102,20 @@ export default function Home() {
         <GraphicDesign />
         </div>
 
-        <div ref={shopifyStoresRef}>
-        <ShopifyStores />
-        </div>
-
-<div ref={brandsRef}>
-        <Brands />
-        </div>
-    
-          <Services />
+        <div ref={ClientsRef}>
+        <Clients />
+        </div>        
+        <Services />
           <InfiniteMovingCardsDemo />
+        <div ref={PriceRef}>
+        <Price />
+        </div>
+        <div ref={FAQRef}>
           <FAQS />
+          </div>
   
       </div>
+      <Footer/>
     </div>
   );
 }

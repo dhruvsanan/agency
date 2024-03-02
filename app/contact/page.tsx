@@ -126,8 +126,9 @@ export default function ContactForm() {
       <Navbar
         scrollToWebsiteDesign={() => {}}
         scrollToGraphicDesign={() => {}}
-        scrollToShopifyStores={() => {}}
-        scrollToBrands={() => {}}
+        scrollToClients={() => {}}
+        scrollToFAQ={() => {}}
+        scrollToPrice={() => {}}
        />
       <div className="md:flex mt-3 items-start justify-center md:py-20 px-6">
         <div className="">

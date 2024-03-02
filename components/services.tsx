@@ -1,9 +1,9 @@
 'use client'
 
-import { CardHoverEffectDemo } from "./snippets/card-hover-effect-snippet";
+import { CardHoverEffectDemo } from "../app/snippets/card-hover-effect-snippet";
 
 const Services = () => {
-    return ( <div className="max-w-5xl mx-auto py-20">
+    return ( <div className="max-w-5xl mx-auto pb-10">
    
         <div className="text-4xl pb-5 md:text-7xl text-center
          bg-clip-text text-transparent bg-gradient-to-b

@@ -23,7 +23,7 @@ const stores = [
   },
 ];
 
-const ShopifyStores = () => {
+const Clients = () => {
   return (
     <section
       className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
@@ -33,11 +33,11 @@ const ShopifyStores = () => {
     >
       <div className=" p-4   mx-auto relative z-10  w-full ">
         <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-          Shopify Stores <br />
+        Clients <br />
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+          We create stunning websites for some of our clients.
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
@@ -53,7 +53,7 @@ const ShopifyStores = () => {
                   height={400}
                   className="rounded-lg mx-auto"
                 />
-                <p className="text-neutral-800 font-bold text-lg mt-4 text-center ">
+                <p className="text-neutral-800 font-bold text-lg mt-4 text-center">
                   &quot;{store.quote}&quot;
                 </p>
                 <p className="text-neutral-800 font-bold text-lg mt-4">
@@ -69,4 +69,4 @@ const ShopifyStores = () => {
   );
 };
 
-export default ShopifyStores;
+export default Clients;

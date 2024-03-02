@@ -80,3 +80,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.text-gradient-to-l {
+  background-image: linear-gradient(to right, rgb(156, 39, 176), rgb(100, 181, 246));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

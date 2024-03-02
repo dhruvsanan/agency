@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import Link from "next/link";
 
 import { PiCheckCircleFill } from "react-icons/pi";
@@ -12,14 +10,18 @@ const plans = [
   {
     index: 0,
     name: "Basic",
-    price: " US $499",
+    price: " ₹29999",
     features: [
       "Fully responsive on all screens",
 
-      "Design + Development",
+      "Design + Development + Hosting + Domain",
 
-      "Private communication channel",
-      "1-3 days turnaround time",
+      "Single page",
+
+      "No attractive features",
+      "No communication channel",
+
+      "3-5 days turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -30,14 +32,16 @@ const plans = [
   {
     index: 1,
     name: "Premium",
-    price: "US $1299",
+    price: "₹34999",
     features: [
       "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "24-hour support response time",
+      "Google Maps Support",
+      "Design + Development + Hosting + Domain",
+      "Multiple pages",
+      "5 attractive features",
+      "SEO Optimization",
       "Private communication channel",
-      "3-5 days turnaround time",
+      "5-7 days turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -49,16 +53,20 @@ const plans = [
     index: 2,
     name: "Enterprise",
     feature: "Contact Us",
-    price: "Let's Talk!",
+    price: "₹49999",
     features: [
       "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "Unlimited Revisions",
-      "24-hour support response time",
+      "Google Maps Support",
+      "Design + Development + Hosting + Domain",
+      "Multiple pages",
+      "Unlimited attractive features",
+      "SEO Optimization",
       "Private communication channel",
+      "5-7 days turnaround time",
+      
       "Priority Development Queue",
-      "Dedicated Project Manager",
+      "7-10 days turnaround time",
+      "Online Booking Feature",
     ],
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
@@ -68,18 +76,11 @@ const plans = [
   },
 ];
 
-const Pricing = () => {
+const Price = () => {
   return ( 
     <div className="w-full  md:items-center md:justify-center
      bg-black/[0.96] antialiased 
      bg-grid-white/[0.02] relative overflow-hidden">
-
-<Navbar
-             scrollToWebsiteDesign={() => {}}
-             scrollToGraphicDesign={() => {}}
-             scrollToShopifyStores={() => {}}
-             scrollToBrands={() => {}}
-      />
 
 <div className="flex items-center justify-center flex-col   ">
           <div className="text-5xl mt-20 pt-3 pb-5 md:pb-10 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
@@ -152,4 +153,4 @@ const Pricing = () => {
   )
 };
 
-export default Pricing;
+export default Price;

@@ -11,7 +11,7 @@ export function CardHoverEffectDemo() {
 export const projects = [
     {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiMonitor className="w-8 h-8 text-blue-600" /></div>,
-        title: "Website Design",
+        title: "Website Design and",
         description:
           "We build fully responsive websites that look great on all devices. Our websites are designed to convert visitors into customers.",
       
@@ -39,9 +39,9 @@ export const projects = [
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiAppStoreLogo className="w-8 h-8 text-blue-600" /></div>,
-        title: "App Development",
+        title: "SEO optimization",
         description:
-          "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
+          "Ensure your website is mobile-responsive. With more users browsing on mobile devices, Google prioritizes mobile-friendly sites in its rankings.",
       
       },
       {
