@@ -46,7 +46,7 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Panda for my company",
+    "Free website for my company",
     "Learn More",
     "Get a Quote",
     "Other",
@@ -69,7 +69,7 @@ type FormValues = {
   job_title: string;
   company_name: string;
   help:
-    | "Evaluate Panda for my company"
+    | "Free website for my company"
     | "Learn More"
     | "Get a Quote"
     | "Other";
@@ -142,7 +142,7 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Panda can help your team work better.
+            Let&apos;s talk about how Elevate Web can help your team work better.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
@@ -290,8 +290,8 @@ export default function ContactForm() {
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
-                          <SelectItem value="Evaluate Panda for my company">
-                            Evaluate Panda for my company
+                          <SelectItem value="Free website for my company">
+                          Free website for my company
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   return (
     <footer style={footerStyle}>
       <div>
-        <p>© {new Date().getFullYear()} &copy; Copyright <strong><span>Panda</span></strong
+        <p>© {new Date().getFullYear()} &copy; Copyright <strong><span>Elevate Web</span></strong
           >. All Rights Reserved</p>
         <div>
           {/* Add your social media icons or links here */}

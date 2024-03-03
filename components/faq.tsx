@@ -23,9 +23,9 @@ const FAQS = () => {
             </div>
             <Accordion type="single" collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>What is Panda?</AccordionTrigger>
+      <AccordionTrigger>What is Elevate Web?</AccordionTrigger>
       <AccordionContent>
-      Panda is a full fledge marketing agency that specializes in branding, web development, app development and digital marketing.
+      Elevate Web is a full fledge marketing agency that specializes in branding, web development, app development and digital marketing.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">

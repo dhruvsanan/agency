@@ -4,22 +4,25 @@ import Image from "next/image";
 
 const stores = [
   {
-    image: "/images/image2.png",
-    quote: "Panda showed us to get started, what to do, and how to do it.",
-    name: "Jason Scer",
+    image: "/images/project7.webp",
+    quote: "Elevate Web showed us to get started, what to do, and how to do it.",
+    name: "Panda Store",
+    url:"https://panda-store.up.railway.app",
   },
   {
-    image: "/images/shop-2.jpeg",
+    image: "/images/bonchic.webp",
     quote:
-      "We had no idea how to get started, but Panda showed us the way. And we were able to create something amazing.",
-    name: "John Prency",
+      "We had no idea how to get started, but Elevate Web showed us the way. And we were able to create something amazing.",
+    name: "Bon chic",
+    url:"http://bon-chic.vercel.app",
   },
 
   {
-    image: "/images/s-2.webp",
+    image: "/images/project8.webp",
     quote:
-      "The team at Panda is amazing. They helped us create a stunning store that we are proud of.",
-    name: "Miguel Martinez",
+      "The team at Elevate Web is amazing. They helped us create a stunning store that we are proud of.",
+    name: "Lead Convert",
+    url:"https://ai-lead-convert.vercel.app",
   },
 ];
 
@@ -37,7 +40,7 @@ const Clients = () => {
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning websites for some of our clients.
+          We have created stunning websites for our clients.
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
@@ -46,13 +49,15 @@ const Clients = () => {
               className="flex flex-col items-center justify-center mt-10 md:w-2/3 mx-auto"
             >
               <div className="flex flex-col items-center justify-center ">
+              <a href={store.url} target="_blank">
                 <Image
                   src={store.image}
-                  alt="shopify store"
-                  width={400}
-                  height={400}
+                  alt="client website"
+                  width={store.name == "Bon chic" ? 500 : 350} 
+                  height={store.name == "Bon chic" ? 500 : 350}
                   className="rounded-lg mx-auto"
                 />
+                </a>
                 <p className="text-neutral-800 font-bold text-lg mt-4 text-center">
                   &quot;{store.quote}&quot;
                 </p>
