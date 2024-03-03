@@ -11,7 +11,6 @@ import {
   } from '@/components/ui/tooltip'
   import { cn } from '@/lib/utils'
   import {
-    Check,
     HelpCircle,
     Minus,
   } from 'lucide-react'
@@ -29,6 +28,9 @@ const plans = [
           },
           {
             text: 'Design + Development + Hosting + Domain',
+          },
+          {
+            text: '2-4 days turnaround time',
           },
           {
             text: 'Google Maps Support',
@@ -52,9 +54,6 @@ const plans = [
             text: 'Contact Us Form',
             footnote:"A fully functioning contact form",
             negative: true,
-          },
-          {
-            text: '2-4 days turnaround time',
           },
         {
             text: 'Online Booking Feature',
@@ -87,6 +86,9 @@ const plans = [
         text: 'Design + Development + Hosting + Domain',
       },
       {
+        text: '5-7 days turnaround time',
+      },
+      {
         text: 'Google Maps Support',
         footnote:
           'google map is integrated in website ',
@@ -104,9 +106,6 @@ const plans = [
       {
         text: 'Contact Us Form',
         footnote:"A fully functioning contact form",
-      },
-      {
-        text: '5-7 days turnaround time',
       },
     {
         text: 'Online Booking Feature',
@@ -139,6 +138,9 @@ const plans = [
             text: 'Design + Development + Hosting + Domain',
           },
           {
+            text: '7-10 days turnaround time',
+          },
+          {
             text: 'Google Maps Support',
             footnote:
               'google map is integrated in website ',
@@ -156,9 +158,6 @@ const plans = [
           {
             text: 'Contact Us Form',
             footnote:"A fully functioning contact form",
-          },
-          {
-            text: '7-10 days turnaround time',
           },
         {
             text: 'Online Booking Feature',
@@ -191,8 +190,18 @@ const Price = () => {
               {plans.map((plan, index) => (
                 <div
                   key={plan.name}
-                  className="h-full flex flex-col justify-between border rounded-3xl px-6  "
-                >
+                  className={cn("h-full flex flex-col justify-between rounded-3xl px-6",{
+                    'border-2 border-blue-600 shadow-blue-200':
+                    plan.name === 'Premium',
+                    'border border-gray-200':
+                    plan.name !== 'Premium',
+                  }
+                )}>
+                    {plan.name === 'Premium' && (
+                      <div className='absolute left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-2 text-sm text-center font-medium text-white'>
+                        Best Seller
+                      </div>
+                    )}
                   <div className={plan.style}>
                     <div className="text-4xl flex  items-center font-medium">
                       {plan.name}
