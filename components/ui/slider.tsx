@@ -34,7 +34,7 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/business.jpeg"
+              src="/images/business.webp"
               alt="logo"
               width={500}
               height={500}
@@ -49,7 +49,7 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/coffe.jpeg"
+              src="/images/coffe.webp"
               alt="logo"
               width={500}
               height={500}
@@ -79,7 +79,7 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/man.jpeg"
+              src="/images/man.webp"
               alt="logo"
               width={500}
               height={500}
@@ -94,7 +94,7 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/image-business.jpeg"
+              src="/images/image-business.webp"
               alt="logo"
               width={500}
               height={500}

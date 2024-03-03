@@ -25,7 +25,7 @@ const FAQS = () => {
     <AccordionItem value="item-1">
       <AccordionTrigger>What is Elevate Web?</AccordionTrigger>
       <AccordionContent>
-      Elevate Web is a full fledge marketing agency that specializes in branding, web development, app development and digital marketing.
+      Elevate Web is a full fledge marketing agency that specializes in branding, web design and development.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
