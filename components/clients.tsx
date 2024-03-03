@@ -10,11 +10,11 @@ const stores = [
     url:"https://panda-store.up.railway.app",
   },
   {
-    image: "/images/bonchic.webp",
+    image: "/images/chatpdf.webp",
     quote:
       "We had no idea how to get started, but Elevate Web showed us the way. And we were able to create something amazing.",
-    name: "Bon chic",
-    url:"http://bon-chic.vercel.app",
+    name: "PDF Analyser",
+    url:"https://chatpdf-dhruv.vercel.app",
   },
 
   {
@@ -53,8 +53,8 @@ const Clients = () => {
                 <Image
                   src={store.image}
                   alt="client website"
-                  width={store.name == "Bon chic" ? 500 : 350} 
-                  height={store.name == "Bon chic" ? 500 : 350}
+                  width="400"
+                  height="400"
                   className="rounded-lg mx-auto"
                 />
                 </a>

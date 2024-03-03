@@ -8,6 +8,7 @@ import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
 interface NavbarProps {
+    path: string;
     scrollToWebsiteDesign: () => void;
     scrollToGraphicDesign: () => void;
     scrollToClients: () => void;
@@ -16,6 +17,7 @@ interface NavbarProps {
   }
   
   const Navbar = ({ 
+    path,
     scrollToWebsiteDesign, 
     scrollToGraphicDesign, 
     scrollToClients, 
@@ -54,8 +56,10 @@ interface NavbarProps {
              text-slate-300 text-center 
              bg-clip-text text-transparent 
              bg-gradient-to-b from-neutral-50
-              to bg-neutral-400 bg-opacity-50"
+              to bg-neutral-400 bg-opacity-50 pl-20 ml-20"
         >
+          {path !== "/book" ? (
+        <>
           <Link
           href="/"className="hover:text-gray-50" > Home</Link>
           <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">Website Design</div>
@@ -63,10 +67,20 @@ interface NavbarProps {
           <div onClick={scrollToClients} className="hover:text-gray-50">Clients</div>
           <div onClick={scrollToPrice} className="hover:text-gray-50">Pricing</div>
           <div onClick={scrollToFAQ} className="hover:text-gray-50">FAQ</div>
-
+          </>):<Link
+          href="/"className="hover:text-gray-50 md:text-2xl lg:text-3xl" > Home Page</Link>}
         </div>
 
         <div className="flex md:hidden">
+          <div className="cursor-pointer 
+            items-center
+             text-slate-300 text-center 
+             bg-clip-text text-transparent 
+             bg-gradient-to-b from-neutral-50
+              to bg-neutral-400 bg-opacity-50 pr-20 mr-20">
+          <Link
+          href="/"className="hover:text-gray-50 text-xl pr-5 mr-4" > Home Page</Link>
+          </div>
             {isDropDownVisible ? (
                 // display an x icon when the drop is visible
                 <div 

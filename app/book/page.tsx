@@ -9,6 +9,7 @@ const Book = () => {
     <>
       <div className="flex flex-col   w-full  h-screen bg-black/[0.96]  bg-grid-white/[0.02]   ">
         <Navbar
+          path="/book"
           scrollToWebsiteDesign={() => {}}
           scrollToGraphicDesign={() => {}}
           scrollToClients={() => {}}
@@ -20,7 +21,7 @@ const Book = () => {
           Book a meeting
         </div>
         {/* TODO change meeting link */}
-        <InlineWidget url="https://calendly.com/dhruvsanan2001/15min" />
+        <InlineWidget url="https://calendly.com/dhruvsanan2001/free-website-demo" />
       </div>
     </>
   );

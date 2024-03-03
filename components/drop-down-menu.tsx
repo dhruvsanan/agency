@@ -31,8 +31,8 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex-col flex space-y-10">
-        <Link href="/pricing" className=" text-black text-2xl">
-          Pricing
+        <Link href="/" className=" text-black text-2xl">
+          Home
         </Link>
         <Link href="/contact" className=" text-black text-2xl">
           Contact

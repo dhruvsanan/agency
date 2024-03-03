@@ -3,9 +3,7 @@ import { useState } from "react";
 import Navbar from "@/components/navbar";
 import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
-import Image from "next/image";
 import Link from "next/link";
-
 import WebsiteDesign from "../components/website-design";
 import GraphicDesign from "../components/graphic-design";
 import Clients from "../components/clients";
@@ -52,14 +50,11 @@ export default function Home() {
   const scrollToFAQ = () => {
     FAQRef.current?.scrollIntoView({ behavior: "smooth" });
   }
-  
-  
-
-
 
   return (
     <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar
+        path=""
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
         scrollToClients={scrollToClients}
