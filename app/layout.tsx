@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 
 const font = Poppins({ subsets: ["latin"],weight: '400' });
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
       <Analytics />
-        {children}</body>
+        {children}
+        <SpeedInsights />
+        </body>
     </html>
   );
 }
