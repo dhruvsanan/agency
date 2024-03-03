@@ -13,6 +13,7 @@ import FAQS from "../components/faq";
 import { useRef } from "react";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
 import Footer from "@/components/footer";
+import Pricing from "@/components/price";
 
 export default function Home() {
 
@@ -108,7 +109,7 @@ export default function Home() {
         <div ref={FAQRef}>
           <FAQS />
           </div>
-  
+          <Pricing />
       </div>
       <Footer/>
     </div>
