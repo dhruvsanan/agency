@@ -7,6 +7,7 @@ import Link from "next/link";
 import WebsiteDesign from "../components/website-design";
 import GraphicDesign from "../components/graphic-design";
 import Clients from "../components/clients";
+import Freewebsite from "../components/free-website";
 import Services from "../components/services";
 import Price from "../components/pricing";
 import FAQS from "../components/faq";
@@ -105,6 +106,7 @@ export default function Home() {
         <div ref={PriceRef}>
         <Price />
         </div>
+        <Freewebsite/>
         <div ref={FAQRef}>
           <FAQS />
           </div>
