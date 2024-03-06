@@ -14,6 +14,7 @@ const Freewebsite=() => {
             <div className="align-center">
             <Image
                 src="/images/google.webp"
+                className="rounded-3xl mx-auto"
                 alt="Website development"
                 width={666} // Replace with desired width in pixels
                 height={444} // Replace with desired height in pixels (optional)
@@ -24,20 +25,15 @@ const Freewebsite=() => {
                     <a href="https://support.google.com/business/answer/14368911?hl=en">Article Link</a></div>
               <br></br>
           We understand your business will be affected by google shutting down the service and changes like these can be unexpected. 
-          But we are committed to helping you through this transition.
+          But we are committed to help you through this transition.
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-4xl text-center mx-auto px-2">
-        To empower local businesses with a strong online presence, we are offering complimentary website. 
-        This initiative ensures you can establish and maintain your digital footprint at no cost. <br></br> <br></br>
-        <div className="align-center">
-        <div className="arrow-container">
-            <div className="arrow-down left-5"></div>
-        </div>
-        </div>
+        To empower local businesses with a strong online presence, we are offering a complimentary website. 
+        This initiative ensures that you can maintain your digital footprint at no cost. <br></br>
         <br></br>
           <a href="https://forms.gle/ZxkmGvF1QTWmejfV8" target="_blank">
           <button 
-          className="px-6 py-2 w-[250px] font-medium bg-destructive rounded-xl text-destructive-foreground hover:bg-destructive/90 text-white transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+          className="px-6 py-2 w-[250px] font-medium bg-blue-500 rounded-xl text-destructive-foreground hover:bg-blue-500/90 text-white transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
         Claim Now
       </button>
       </a>
