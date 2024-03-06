@@ -24,10 +24,10 @@ const Freewebsite=() => {
                     <a href="https://support.google.com/business/answer/14368911?hl=en">Article Link</a></div>
               <br></br>
           We understand your business will be affected by google shutting down the service and changes like these can be unexpected. 
-          But we're committed to helping you through this transition.
+          But we are committed to helping you through this transition.
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-4xl text-center mx-auto px-2">
-        To empower local businesses with a strong online presence, we're offering complimentary website. 
+        To empower local businesses with a strong online presence, we are offering complimentary website. 
         This initiative ensures you can establish and maintain your digital footprint at no cost. <br></br> <br></br>
         <div className="align-center">
         <div className="arrow-container">
