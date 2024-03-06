@@ -12,7 +12,13 @@ const Freewebsite=() => {
               to bg-neutral-400 bg-opacity-50" 
         >
             <div className="align-center">
-            <img src="/images/google.webp" alt="Website development" style={{ width: "66.66%", display: "block", margin: "0 auto" }}></img>
+            <Image
+                src="/images/google.webp"
+                alt="Website development"
+                width={666} // Replace with desired width in pixels
+                height={444} // Replace with desired height in pixels (optional)
+                layout="intrinsic" // Adjust layout as needed (e.g., "fill", "fixed")
+                />
                 </div>
                 <div className="text-blue-500 pt-2 text-sm">
                     <a href="https://support.google.com/business/answer/14368911?hl=en">Article Link</a></div>
