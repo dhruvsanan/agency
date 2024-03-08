@@ -32,9 +32,9 @@ export const projects = [
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiMegaphone className="w-8 h-8 text-blue-600" /></div>,
-        title: "Social Media",
+        title: "Grow Your Reputation",
         description:
-          "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
+          "Our smart Google review system helps your business shine online, pushing you up the ranks and making sure people notice.",
       
       },
       {

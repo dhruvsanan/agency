@@ -1,5 +1,6 @@
 "use client";
 
+import { InfiniteMovingCardsDemo } from "@/app/snippets/infinite-moving-card-snippet";
 import Image from "next/image";
 
 const stores = [
@@ -28,6 +29,7 @@ const stores = [
 
 const Clients = () => {
   return (
+    <>
     <section
       className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
     rounded-3xl
@@ -70,7 +72,10 @@ const Clients = () => {
           ))}
         </div>
       </div>
+      <InfiniteMovingCardsDemo />
     </section>
+    
+    </>
   );
 };
 

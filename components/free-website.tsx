@@ -14,11 +14,10 @@ const Freewebsite=() => {
             <div className="align-center">
             <Image
                 src="/images/google.webp"
-                className="rounded-3xl mx-auto"
+                className="rounded-3xl mx-auto dynamic-height"
                 alt="Website development"
-                width={666} // Replace with desired width in pixels
-                height={444} // Replace with desired height in pixels (optional)
-                layout="intrinsic" // Adjust layout as needed (e.g., "fill", "fixed")
+                width={666} 
+                height={444} 
                 />
                 </div>
                 <div className="text-blue-500 pt-2 text-sm">
@@ -29,7 +28,7 @@ const Freewebsite=() => {
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-4xl text-center mx-auto px-2">
         To empower local businesses with a strong online presence, we are offering a complimentary website. 
-        This initiative ensures that you can maintain your digital footprint at no cost. <br></br>
+        This initiative ensures that you can maintain your digital footprint at no investment. <br></br>
         <br></br>
         
           <a href="https://forms.gle/ZxkmGvF1QTWmejfV8" target="_blank">

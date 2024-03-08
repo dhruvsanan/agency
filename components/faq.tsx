@@ -25,48 +25,38 @@ const FAQS = () => {
     <AccordionItem value="item-1">
       <AccordionTrigger>What is Elevate Web?</AccordionTrigger>
       <AccordionContent>
-      Elevate Web is a full fledge marketing agency that specializes in branding, web design and development.
+      Elevate Web is a cutting-edge web development agency that specializes in creating digital experiences 
+      that elevate your brand. Our mission is to craft websites and e-commerce solutions that not only look 
+      stunning but also drive business growth and customer engagement.      
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
       <AccordionTrigger>Why us?</AccordionTrigger>
       <AccordionContent>
-        We have a team of developers to help you out. 
+      Our team at Elevate Web combines design, technology, and marketing expertise to deliver websites that 
+      stand out in the digital landscape. We understand that your website is the heart of your online presence, 
+      and we&apos;re dedicated to making it beat stronger.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-3">
       <AccordionTrigger>What about free websites builders?</AccordionTrigger>
       <AccordionContent>
-      Unlike other free website builders, we provide you with a dedicated engineer who will do the work for you. 
-      You don&apos;t have to start from scratch or worry about the technical aspects of building a website. 
-      You just tell us what you need, and we will handle it for you. 
-      Our engineer will take care of everything from web design and development to hosting and domain registration. 
-      If you choose to use other free website builders, you will have to do all these things yourself. 
-      You will need to have the knowledge and skills of setting up a domain, SSL, security, and deployment. 
-      If you already have these skills, we can recommend you some awesome resources that will help you build your own website. 
-      But if you want to save time and hassle, we are here to help you.
+      Free website builders may seem cost-effective, but they often lack in design flexibility, functionality, and 
+      scalability. Elevate Web transcends these limitations by offering bespoke solutions that evolve with your business. 
+      Unlike DIY platforms, we provide a dedicated engineer to handle all aspects of your website&apos;s creation and maintenance. 
+      From design to hosting and domain registration, we manage it all, so you don&apos;t have to worry about the technicalities. 
+      For those with the know-how, we&apos;re happy to suggest resources for self-building. But for a hassle-free experience, 
+      Elevate Web is your go-to partner.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-4">
       <AccordionTrigger>Why wouldn't I just hire a full-time developer?</AccordionTrigger>
       <AccordionContent>
       Good question! For starters, the annual cost of a full-time senior-level developer now exceeds $120,000, 
-      plus benefits (and good luck finding one available). Aside from that, you may not always have enough work 
-      to keep them busy at all times, so you're stuck paying for time you aren't able to utilize.
-      So the monthly plan is cost-effective, especially for projects with variable workloads.
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem value="item-5">
-      <AccordionTrigger>
-    Pricing?
-      </AccordionTrigger>
-      <AccordionContent>
-        You can start with a basic plan to make a minimum viable product. 
-        We also offer custom tailored solutions for your business. 
-        <Link
-        href="/contact"
-        className="rounded-3xl text-gradient-to-r from-purple-500 to-blue-300 font-bold">
-           &nbsp;Contact us </Link> to get a quote.
+      plus benefits (and good luck finding one available). A full-time developer can be a valuable asset, 
+      but may not offer the breadth of skills and services that a specialized agency like Elevate Web brings 
+      to the table. We provide a team of experts across various disciplines, ensuring all aspects of your web 
+      presence are covered.
       </AccordionContent>
     </AccordionItem>
   
@@ -75,7 +65,11 @@ const FAQS = () => {
       Could you tell me more about your support options?
         </AccordionTrigger>
       <AccordionContent>
-        We offer Monday-Friday support for all our clients.
+      Our support goes beyond troubleshooting; we offer strategic advice to help you maximize your site&apos;s performance. 
+      From technical assistance to marketing guidance, our team is here for you every step of the way. Just shoot us a mail at&nbsp; 
+      <a href="mailto:team@elevateweb.in"
+        className='text-blue-500'
+        target="_blank">team@elevateweb.in</a>
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-7">

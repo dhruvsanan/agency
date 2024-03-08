@@ -12,7 +12,6 @@ import Services from "../components/services";
 import Price from "../components/pricing";
 import FAQS from "../components/faq";
 import { useRef } from "react";
-import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -31,6 +30,7 @@ export default function Home() {
   const ClientsRef = useRef<HTMLDivElement>(null);
   const PriceRef = useRef<HTMLDivElement>(null);
   const FAQRef = useRef<HTMLDivElement>(null);
+  const FreewebsiteRef = useRef<HTMLDivElement>(null);
 
   
   const scrollToWebsiteDesign = () => {
@@ -51,6 +51,9 @@ export default function Home() {
   const scrollToFAQ = () => {
     FAQRef.current?.scrollIntoView({ behavior: "smooth" });
   }
+  const scrollToFreewebsite = () => {
+    FreewebsiteRef.current?.scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
     <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
@@ -70,25 +73,25 @@ export default function Home() {
           bg-gradient-to-b from-neutral-50
               to bg-neutral-400 bg-opacity-50"
         >
-          Create, grow, and <br /> scale your business
+          Elevate Your Online Presence
         </div>
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business<br></br> We are a team of
-          creatives who are excited to help you grow your business
+        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-2xl text-center mx-auto px-4">
+        At Elevate Web, We craft visually stunning websites engineered to boost your business and convert visitors into loyal customers
         </p>
-
-        <Link
-          href={"/book"}
-          className="cursor-pointer 
+        <div className="mt-4 text-3xl font-normal  text-neutral-300 max-w-2xl text-center mx-auto px-4">
+        No Investment to Get Started?
+        </div>
+        <div className="mt-4 text-lg font-normal  text-neutral-300 max-w-2xl text-center mx-auto px-4">
+        Jump in by claiming a complimentary website now
+        </div>
+        <div onClick={scrollToFreewebsite} className="cursor-pointer 
           flex items-center 
-          justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white "
-        >
-          Book a free call
-        </Link>
+          justify-center border border-blue-400 rounded-full w-48 p-2  mx-auto my-6 text-blue-400">Claim Now</div>
 
         <div className="w-full pt-20">
           <SliderOne />
           </div>
+          <Services />
           <div ref={websiteDesignRef}>
         <WebsiteDesign />
         </div>
@@ -101,12 +104,14 @@ export default function Home() {
         <div ref={ClientsRef}>
         <Clients />
         </div>        
-        <Services />
-          <InfiniteMovingCardsDemo />
+        
         <div ref={PriceRef}>
         <Price />
         </div>
+        <div ref={FreewebsiteRef}>
         <Freewebsite/>
+        </div>
+        
         <div ref={FAQRef}>
           <FAQS />
           </div>

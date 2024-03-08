@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="pb-40 rounded-md flex flex-col antialiased my-4 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className=" rounded-md flex flex-col antialiased my-4 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -18,31 +18,31 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    "Elevate Web's custom site design led to a surge in our store's traffic and sales, showcasing our products brilliantly.",
+    name: "Shresth Kapoor",
+    title: "Bon Chic",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Our restaurant's client base and revenue grew significantly after Elevate Web's website makeover, enhancing our online appeal.",
+    name: "Sonu Sanan",
+    title: "SSK Electricals",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "Post Elevate Web's revamp, our cleaning agency saw a notable increase in clientele and sales, reflecting our service excellence online.",
+    name: "Steve Marcus",
+    title: "Kaya Agencies",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Our accounting firm's new website by Elevate Web attracted more clients and boosted our professional image, leading to increased sales.",
+    name: "Jane Marshal",
+    title: "Accountant",
+  },
+  {
+    quote:
+      "Thanks to Elevate Web, our car service's online presence drove up customer visits and sales, mirroring our shop's efficiency.",
+    name: "Herman Austen",
+    title: "Car Mechanic",
   },
 ];
