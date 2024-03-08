@@ -50,7 +50,7 @@ const FAQS = () => {
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-4">
-      <AccordionTrigger>Why wouldn't I just hire a full-time developer?</AccordionTrigger>
+      <AccordionTrigger>Why wouldn&apos;t I just hire a full-time developer?</AccordionTrigger>
       <AccordionContent>
       Good question! For starters, the annual cost of a full-time senior-level developer now exceeds $120,000, 
       plus benefits (and good luck finding one available). A full-time developer can be a valuable asset, 
@@ -77,12 +77,12 @@ const FAQS = () => {
       How can your service start at $0? What&apos;s the catch?
         </AccordionTrigger>
       <AccordionContent>
-      While the initial website setup is offered at no upfront cost, it's important to clarify the scope of this offering.
+      While the initial website setup is offered at no upfront cost, it&apos;s important to clarify the scope of this offering.
       The complimentary tier focuses on providing immediate support to businesses impacted by Google website shutdowns. 
       During these challenging times, we aim to offer a basic foundation to get your online presence back up and running swiftly.
 
       This introductory tier includes a standard template and a generic domain to ensure a functional website exists. 
-      However, it's important to understand that extensive customization, advanced features, and a premium domain name 
+      However, it&apos;s important to understand that extensive customization, advanced features, and a premium domain name 
       require an upgrade to one of our paid plans.
       </AccordionContent>
     </AccordionItem>
